@@ -1,59 +1,54 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+    height: 100vh;
     background-image: url(assets/coffee-beans-from-above.jpg);
     background-color: rgba(0, 0, 0, 0.37);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-blend-mode: darken;
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
 }
 
 header {
-    width: 100%;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: baseline;
-}
-
-h2 {
-    font-size: 1.9em;
-    padding:  0 0 0 25px;
-    height: 80px;
-    margin: 0;
-    color: white;
-    font-family: 'Dancing Script', cursive;
-    display: flex;
-float: left;
-}
-
-
-.entrar{
-    width: 100%;
+    backdrop-filter: blur( 13.5px );
+    background-color: #a97927;
+    padding: 0 80px;
 }
 
 .registro {
-    float: right;
-    height: 90px;
-   padding: 25px 0px 25px 25px;
+    padding: 25px 0px 25px 25px;
+}
+
+.logo a {
+    font-size: 1.9em;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
 }
 
 .entrar .registro a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 1.1em;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 .botão-destaque {
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 10px;
+    background-color: #6e4f1a;
     padding: 10px 15px;
     margin: 20px;
+    color: #fff;
 }
 
 aside {
@@ -61,7 +56,7 @@ aside {
 }
 
 .texto {
-    padding: 30px 0 86px 60px;
+    padding: 80px 0 80px 60px;
 }
 
 h1 {
@@ -78,9 +73,29 @@ h1 {
     width: 500px;
 }
 
+.saiba-mais {
+    padding: 20px 35px;
+    font-size: x-large;
+    border: 0;
+    background-color: #a97927;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: ease-out .4s;
+}
+
+.saiba-mais:hover {
+    transform: scale(1.1);
+}
+
 footer {
     width: 100%;
     text-decoration: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 footer li{
@@ -118,4 +133,43 @@ footer li a {
 
 .icones-sociais li a {
     font-size: 20px;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 363px) {
+    h1 {
+        width: 100%;
+    }
+
+    footer {
+        position: initial;
+    }
+    
+    .botão-destaque {
+        display: none;
+    }
+
+    .logo a {
+        padding: 25px 0px 25px 25px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    header {
+        padding: 0 20px;
+    }
+    
+    .texto {
+        width: 100%;
+        padding: 80px 20px;
+    }
+
+    .texto-p {
+        width: 100%;
+    }
+
+    .icones-sociais {
+        padding: 10px;
+    }
 }

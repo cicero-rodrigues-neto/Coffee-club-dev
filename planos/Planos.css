@@ -3,15 +3,39 @@ body {
 }
 
 header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    backdrop-filter: blur( 13.5px );
+    background-color: #a97927;
+}
+
+.registro {
+    padding: 25px 0px 25px 25px;
+}
+
+.logo a {
+    font-size: 1.9em;
+    padding: 0 0 0 25px;
     color: white;
-    background-image: url(assets/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
-    background-color: rgba(0, 0, 0, 0.712);
-    background-attachment: fixed;
-    background-blend-mode: darken;
-    height: auto;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+}
+
+.entrar .registro a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.botão-destaque {
+    border-radius: 30px;
+    background-color: #6e4f1a;
+    padding: 10px 15px;
+    margin: 20px;
+    color: #fff;
 }
 
 
@@ -39,6 +63,7 @@ header {
 main {
     display: flex;
     background-color: rgb(255, 255, 255);
+    margin-top: 80px;
 }
 
 .container {
@@ -127,6 +152,8 @@ td {
 footer {
     width: 100%;
     text-decoration: none;
+    position: absolute;
+    bottom: 0;
 }
 
 footer li{
@@ -169,9 +196,14 @@ footer li a {
 @media screen and (max-width: 768px){
 	main {
         flex-direction: column;
+        margin-top: 20px;
     }
     
     .container {
         width: 80%;
+    }
+
+    footer {
+        position: initial;
     }
 }

@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1280px;
+    display: contents;
+
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    backdrop-filter: blur( 13.5px );
+    background-color: #a97927;
+}
+
+.registro {
+    padding: 25px 0px 25px 25px;
+}
+
+.logo a {
+    font-size: 1.9em;
+    padding: 0 0 0 25px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+}
+
+.entrar .registro a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.botão-destaque {
+    border-radius: 30px;
+    background-color: #6e4f1a;
+    padding: 10px 15px;
+    margin: 20px;
+    color: #fff;
+}
+
+.container-principal {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.titulo h1 {
+    color: #a97927;
+    font-family: 'Amatic SC', cursive;
+    font-size: xxx-large;
+    font-size: -webkit-xxx-large;
+    margin: 20px 0;
+}
+
+.sub-titulo p {
+    font-size: xx-large;
+    color: #303030;
+    margin-bottom: 30px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-items {
+    display: flex;
+    gap: 30px;
+}
+
+.container-items section {
+    text-align: center;
+    display: grid;
+    max-width: 300px;
+    height: 300px;
+    align-content: center;
+    padding: 0 20px;
+    justify-items: center;
+}
+
+.container-items section img {
+    height: 50px;
+    margin: 20px 0;
+}
+
+.container-items h2 {
+    margin-bottom: 25px;
+    color: #a97927;
+    font-family: 'Amatic SC', cursive;
+    font-size: xx-large;
+}
+
+.container-items p {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.button-assinar button {
+    background-color: #a97927;
+    color: #fff;
+    padding: 20px 100px;
+    margin: 20px 0;
+    border: 0;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in .4s;
+}
+
+.button-assinar button:hover {
+    transform: scale(1.1);
+    background-color: #a97927be;
+}
+
+
+.h1-fazenda h1 {
+    margin: 20px 0 50px 0;
+    font-size: 50px;
+    font-family: monospace;
+}
+
+.div-fazendas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.container-fazendas {
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #a0a0a077;
+}
+
+.container-fazendas img {
+    width: 100%;
+    height: 250px;
+}
+
+.container-fazendas h3 {
+    margin: 20px 0;
+    color: #a97927;
+    font-size: x-large;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-fazendas hr {
+    margin:20px;
+    border: 1px dashed #a0a0a077;
+}
+
+/* .container-fazendas h3:last-child {
+    margin-bottom: 20px;
+} */
